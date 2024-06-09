@@ -1,0 +1,26 @@
+from trainschedule import TrainSchedule
+
+# 使用示例
+schedule = TrainSchedule()
+schedule.add_train_line('Train A')
+schedule.add_station('Train A', 'station1', 5)
+schedule.add_stop_duration('Train A', 'station1', 1)
+schedule.add_station('Train A', 'station2', 10)
+schedule.add_stop_duration('Train A', 'station2', 1)
+schedule.add_station('Train A', 'station3', 20)
+schedule.add_stop_duration('Train A', 'station3', 1)
+schedule.add_station('Train A', 'station4', 30)
+schedule.add_stop_duration('Train A', 'station4', 1)
+schedule.add_station('Train A', 'station5', 35)
+
+schedule.add_train_line('Train B')
+schedule.add_station('Train B', 'station1', 10)
+schedule.add_stop_duration('Train B', 'station1', 1)
+schedule.add_station('Train B', 'station2', 15)
+schedule.add_stop_duration('Train B', 'station2', 1)
+schedule.add_station('Train B', 'station3', 25)
+schedule.add_stop_duration('Train B', 'station3', 1)
+schedule.add_station('Train B', 'station4', 35)
+schedule.add_stop_duration('Train B', 'station4', 1)
+schedule.add_station('Train B', 'station5', 40)
+schedule.show()
